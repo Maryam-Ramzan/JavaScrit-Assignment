@@ -1,0 +1,17 @@
+#right-side{
+    width: 50%;
+     margin: 0 auto;
+     background-color: #e6e6fa;
+  }
+ 
+  #right-side>input{
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      
+      
+  }
+  .imageo{
+      width:500px;
+      height: 500px;
+  }

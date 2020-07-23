@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+ <!-- !---Chapter 43-48---!
+     Task # 01 -->
+        
+ <a href="#" onclick="Click()">Facebook</a> 
+
+ <!-- Task # 02  -->
+
+<img src="sam.png" alt="Samsung" onclick="Click1()">
+
+
+<!-- Task # 03 -->
+
+
+ <table id="r1">
+    <th>Index</th>
+    <th>Name</th>
+    <th>Class</th>
+    
+    <tr>
+        <td>1</td>
+        <td>Ahmed</td>
+        <td>10</td>
+        <td><button onclick="Del(this)" >Delete</button></td>
+    </tr>
+    <tr >
+        <td>2</td>
+        <td>Mark</td>
+        <td>9</td>
+        <td><button onclick="Del(this)">Delete</button></td>
+    </tr>
+    <tr >
+        <td>3</td>
+        <td>John</td>
+        <td>10</td>
+        <td><button onclick="Del(this)">Delete</button></td>
+    </tr>
+    <tr >
+        <td>4</td>
+        <td>Doe</td>
+        <td>10</td>
+        <td><button onclick="Del(this)">Delete</button></td>
+    </tr>
+    <tr >
+        <td>5</td>
+        <td>Hazel</td>
+        <td>9</td>
+        <td><button onclick="Del(this)">Delete</button></td>
+    </tr>
+</table>
+
+<!-- Task # 04 -->
+ 
+<img src="sam.png" alt="" onmouseover="src='inf.jpg'" onmouseout="src='sam.png'"> -->
+
+<!-- Task # 05 -->
+<div>
+    <h1 id="incre">0</h1>
+    <button onclick="Inc()">Increase</button>
+    
+    <button onclick="dc()">Decrease</button>
+</div> 
+
+<!-- Chapter 49 - 52 -->
+<!-- Task # 01 -->
+
+<div>
+    
+    <div id="right-side">
+        <h1>Signup Form</h1>
+        <h3>Its free and always will be.</h3> <br>
+        <input type="text" placeholder="First Name" id="user"> 
+         <input type="text" placeholder="Last Name" id="user1"> <br>
+        <input type="email" placeholder="Email" class="width" id="user2">  <br>
+        <input type="email" placeholder="Re-Enter Your Email" class="width"> <br>
+        <input type="passward" name="" id="" placeholder="Passward" class="width"> <br>
+        <input type="date" name="" id="user3"> <br>
+         <input type="radio" name="gender" id="user4"> Male <input type="radio" name="gender" id="user5"> Female <br> <br> 
+         <br>
+         <input type="Submit"  onclick="showinput();">
+        </div> 
+
+        <h2>Your Input:</h2>
+
+        <span id= "display">
+        </span>
+<span id= "display1"></span>
+<span id= "display2"></span> 
+<span id= "display3"></span>
+</div>
+
+<!-- Task # 02 -->
+
+ <p id="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos deseruna <a href="#" onclick="Read()">Read More</a>
+</p> 
+
+<!-- Chapter 53 to 58 -->
+<!-- Task # 01-->
+
+ <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" src="1.jpg" alt=""width="300px" height="300px" onclick="zoom()" id="i1">
+<img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" src="2.jpg" alt=""width="300px" height="300px">
+<img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" src="3.jpg" alt=""width="300px" height="300px">
+<img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" src="4.png" alt=""width="300px" height="300px"> 
+  
+  <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <img src="" alt="" id="model" class="imageo">
+        </div>
+        
+      </div>
+    </div>
+  </div> 
+
+<!-- Task # 02-->
+
+ <p id= 'paragraph'>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores commodi blanditiis reprehenderit eum, culpa inventore cum esse beatae reiciendis aut perspiciatis ea. Laboriosam maiores modi ad ipsam corporis tempora!
+</p>
+<button onclick="inzoom()">Zoom In</button>
+<button onclick="Out()">Zoom Out</button> 
+
+
+<!-- Chapter 58 - 67 -->
+<!-- Task # 01 & 02-->
+
+<div> 
+    <h1> DOM </h1> 
+    <div id="form-content" class="content"> 
+        <label for="first-name">First Name</label> 
+        <input type="text" id="first-name" /> 
+        <label for="last-name">Last Name</label> 
+        <input type="text" id="last-name" /> 
+        <label for="email">Email</label> 
+        <input type="text" id="email" /> 
+    </div> 
+    <div id="main-content" class="content"> 
+        <p class="render"> First Name : Alex</p> 
+        <p class="render" id="lastName">Last Name: Bank</p> 
+        <p class="render"> Email : alexbank@example.com</p> 
+        <p class="render"> Country : Pakistan </p> 
+        <p class="render"> contact : +92 300 1234567</p> 
+    </div> 
+</div>
+
+
+
+
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
